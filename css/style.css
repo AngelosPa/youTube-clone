@@ -38,18 +38,10 @@ a:hover {
 /*  Main   */
 .main-container {
   display: flex;
+  border: 2px rgb(158, 144, 238) dashed;
 }
 .main-container .main {
   width: 75vw;
   height: 80vh;
-  border: 2px red dashed;
-}
-/* footer */
-.footer-menu {
-  border: 2px red dashed;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  border: 2px lightgreen dashed;
 }
