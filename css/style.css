@@ -70,20 +70,23 @@ Flex-direction: row | row-reverse | column | column-reverse
 align-self: flex-start | flex-end | center | baseline | stretch
 justify-content: start |  center | space-between | space-around | space-evenly   */
 /*  Main   */
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+
+  border: 2px red dashed;
+}
 .main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  border: 2px red dashed;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
+/*
 .main-container .main {
-  width: 180vh;
+  width: 50%;
   height: 80vh;
   border: 2px lightgreen dashed;
   display: flex;
@@ -91,6 +94,7 @@ justify-content: start |  center | space-between | space-around | space-evenly  
   justify-content: center;
   flex-wrap: wrap;
 }
+*/
 .bigimage {
   width: 50rem;
   border: 2px rgb(85, 3, 3) dashed;
@@ -122,11 +126,18 @@ justify-content: start |  center | space-between | space-around | space-evenly  
 
   border-radius: 50%;
 }
+aside {
+  display: flex;
+  flex-direction: column;
+}
 .spread-menu,
-.subscriptionsclass {
+.subscriptionsclass,
+.morefromyoutube {
   border: 1px rgb(133, 137, 141) solid;
-  margin: 0 0 0 0;
+  text-decoration: none;
   height: auto;
+  list-style-type: none;
+  padding-left: 5%;
 }
 .top-menu {
   display: flex;
