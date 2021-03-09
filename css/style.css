@@ -12,17 +12,30 @@ i,
 p {
   color: rgb(133, 132, 131);
 }
+h1 {
+  color: aliceblue;
+  font-size: 2rem;
+  letter-spacing: -0.2rem;
+}
+img {
+  width: 10rem;
+}
 /* HERO SECTION WITH SEARCHBAR  */
 .herosection {
-  border: 2px red dashed;
-  background-color: rgba(180, 48, 48, 0);
   display: flex;
   justify-content: space-evenly;
+  align-items: left;
 }
 .herosection img {
-  width: 5rem;
+  width: 3rem;
+}
+.herosection i {
   color: aliceblue;
 }
+.logo {
+  display: flex;
+}
+
 /* Menu */
 .top-menu {
   border: 2px red dashed;
@@ -52,14 +65,46 @@ a:hover {
   background-color: lightgray;
   transform: scale(2);
 }
-
+/*  Display: flex 
+Flex-direction: row | row-reverse | column | column-reverse
+align-self: flex-start | flex-end | center | baseline | stretch
+justify-content: start |  center | space-between | space-around | space-evenly   */
 /*  Main   */
 .main-container {
   display: flex;
   border: 2px rgb(158, 144, 238) dashed;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .main-container .main {
-  width: 75vw;
+  width: 180vh;
   height: 80vh;
   border: 2px lightgreen dashed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.yliko {
+  margin-left: 5rem;
+  width: 80vh;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.smallvideos {
+  display: block;
+  align-items: left;
+  justify-content: center;
+  padding: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px rgb(255, 255, 255) dashed;
+}
+.herologo img {
+  width: 5rem;
+
+  border-radius: 50%;
 }
