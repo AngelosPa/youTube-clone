@@ -29,7 +29,7 @@ img {
 }
 /* sorting out the SEARCHBAR  */
 .searchbarteam {
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(59, 56, 56);
 }
 .herosection input {
   border: none;
@@ -39,27 +39,41 @@ img {
 input::placeholder {
   color: rgb(190, 190, 190);
   background-color: black;
-  height: 20rem;
+  border: none;
 }
 /* sorting out the whole HERO SECTION WITH SEARCHBAR  */
 .herosection {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 92rem;
 }
 .herosection {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.herosection div:nth-child(1) {
+  display: flex;
+  width: 2.5rem;
 }
 .herosection img {
   width: 3rem;
 }
 .herosection i {
   color: aliceblue;
+  padding: 1rem;
+}
+.herosection i:nth-child(2) {
+  color: rgb(163, 173, 182);
+  border: 1px red dashed;
+  background-color: rgb(77, 74, 70);
 }
 .logo {
   display: flex;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* spread Menu */
@@ -69,7 +83,6 @@ aside {
 
   justify-content: left;
 }
-
 .spread-menu a,
 .subscriptionsclass a,
 .morefromyoutube a {
@@ -80,7 +93,6 @@ aside {
   margin: 1rem 0 1rem 0;
   border-bottom: 2px rgb(133, 137, 141) solid;
 }
-
 .spread-menu,
 .subscriptionsclass,
 .morefromyoutube {
@@ -91,25 +103,41 @@ aside {
   width: 12rem;
   padding-right: 3rem;
 }
+/* for the bigg banner and the small videos  */
+.bigimage {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.bigimage img {
+  width: 40rem;
+}
 
-/* Menu  home, videos, playlists menu etc  */
-.top-menu {
-  width: 100vw;
-  height: 6vh;
+.herologo {
+  width: 15rem;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgb(37, 32, 32);
 }
+.herologo img {
+  width: 5rem;
+  border: 3px white solid;
+  border-radius: 50%;
+}
+
 /* round logo-button-and title subscribed button */
 .logo-button-andstuff {
+  padding-top: 1rem;
+  padding-left: 3rem;
   display: flex;
   align-items: center;
   flex-direction: row;
   display: flex;
-  justify-content: space-around;
-  width: 100vw;
+  justify-content: space-between;
+  width: 80rem;
 }
 .logo-button-andstuff input {
   border: 0.5rem rgb(82, 72, 72) solid;
@@ -120,8 +148,17 @@ aside {
   padding: 1rem;
 }
 
-/* home, videos, playlists menu etc */
-
+/* Menu  home, videos, playlists menu etc  */
+.top-menu {
+  padding-left: 3rem;
+  width: 80rem;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(37, 32, 32);
+}
 .top-menu a {
   padding: 1.5rem;
 }
@@ -154,53 +191,25 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   background-color: rgb(37, 32, 32);
 }
 
 /*
-.main-container .main {
-  width: 50%;
-  height: 80vh;
-  border: 2px lightgreen dashed;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+.container-ola {
+
 */
-
-/* for the bigg banner and the small videos  */
-.bigimage {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-.bigimage img {
-  width: 40rem;
-}
-
-.herologo {
-  width: 15rem;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.herologo img {
-  width: 5rem;
-  border: 3px white solid;
-  border-radius: 50%;
-}
 
 /* for the buttons, upload sort by etc */
 .vidoptions {
-  width: 100vw;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3.3rem;
+  width: 80rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  background-color: black;
 }
 
 .vidoptions div {
@@ -213,12 +222,13 @@ a:hover {
   justify-content: right;
 }
 .yliko {
-  width: 100vw;
+  padding-left: 3rem;
+  width: 80rem;
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  align-items: top;
+  justify-content: flex-start;
   background-color: rgba(3, 3, 3, 0.733);
 }
 .smallvideos {
