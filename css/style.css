@@ -92,17 +92,21 @@ aside {
   padding-right: 3rem;
 }
 
-/* Menu */
+/* Menu  home, videos, playlists menu etc  */
 .top-menu {
   width: 100vw;
   height: 6vh;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
-  justify-content: left;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(37, 32, 32);
+  border: 2px red dashed;
 }
+/* home, videos, playlists menu etc */
+
 .top-menu a {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .menu li {
   display: inline;
@@ -110,7 +114,6 @@ aside {
 .top-menu nav ul {
   display: flex;
   justify-content: space-evenly;
-  /* flex-direction: row; */
 }
 
 /* links */
@@ -155,18 +158,18 @@ justify-content: start |  center | space-between | space-around | space-evenly  
 
 /* for the bigg banner and the small videos  */
 .bigimage {
-  width: 50rem;
+  width: 100vw;
   color: aliceblue;
   margin-right: 30rem;
 }
-/* round logo-button-and title  */
+/* round logo-button-and title subscribed button */
 .logo-button-andstuff {
   display: flex;
   align-items: center;
   flex-direction: row;
   display: flex;
   justify-content: center;
-  width: 50rem;
+  width: 100vw;
 }
 .herologo {
   width: 15rem;
@@ -181,6 +184,23 @@ justify-content: start |  center | space-between | space-around | space-evenly  
   border-radius: 50%;
 }
 
+/* upload sort by etc */
+.vidoptions {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vidoptions div {
+  display: flex;
+  width: 11rem;
+}
+.vidoptions div a:nth-last-child(1) {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
 .yliko {
   width: 100vw;
   height: 80vh;
@@ -197,18 +217,9 @@ justify-content: start |  center | space-between | space-around | space-evenly  
   padding: 0.4rem;
   flex-direction: row;
   flex-wrap: wrap;
-
   background-color: rgb(0, 0, 0);
 }
+
 .smallvideos p {
   color: rgb(255, 255, 255);
-}
-
-.top-menu {
-  width: 50rem;
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  border: 2px red solid;
-  background-color: rgb(37, 32, 32);
 }
