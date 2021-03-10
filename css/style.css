@@ -101,8 +101,25 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   background-color: rgb(37, 32, 32);
-  border: 2px red dashed;
 }
+/* round logo-button-and title subscribed button */
+.logo-button-andstuff {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+.logo-button-andstuff input {
+  border: 0.5rem rgb(82, 72, 72) solid;
+  color: rgb(190, 190, 190);
+  background-color: rgb(82, 72, 72);
+}
+.logo-button-andstuff i {
+  padding: 1rem;
+}
+
 /* home, videos, playlists menu etc */
 
 .top-menu a {
@@ -126,10 +143,7 @@ a:hover {
   background-color: lightgray;
   transform: scale(2);
 }
-/*  Display: flex 
-Flex-direction: row | row-reverse | column | column-reverse
-align-self: flex-start | flex-end | center | baseline | stretch
-justify-content: start |  center | space-between | space-around | space-evenly   */
+
 /*  Main   */
 
 .main-container {
@@ -159,18 +173,15 @@ justify-content: start |  center | space-between | space-around | space-evenly  
 /* for the bigg banner and the small videos  */
 .bigimage {
   width: 100vw;
-  color: aliceblue;
-  margin-right: 30rem;
-}
-/* round logo-button-and title subscribed button */
-.logo-button-andstuff {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  display: flex;
   justify-content: center;
-  width: 100vw;
+  background-color: white;
 }
+.bigimage img {
+  width: 40rem;
+}
+
 .herologo {
   width: 15rem;
   display: flex;
@@ -184,7 +195,7 @@ justify-content: start |  center | space-between | space-around | space-evenly  
   border-radius: 50%;
 }
 
-/* upload sort by etc */
+/* for the buttons, upload sort by etc */
 .vidoptions {
   width: 100vw;
   display: flex;
