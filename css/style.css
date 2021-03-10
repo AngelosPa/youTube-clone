@@ -5,6 +5,7 @@
   font-size: 16px;
 }
 /* basics  */
+
 body {
   background-color: rgb(59, 56, 56);
 }
@@ -59,7 +60,6 @@ input::placeholder {
 }
 .logo {
   display: flex;
-  align-items: left;
 }
 .logo-button-andstuff {
   display: flex;
@@ -68,6 +68,24 @@ input::placeholder {
   justify-content: space-between;
 
   width: 100vw;
+}
+/* spread Menu */
+.spread-menu a,
+.subscriptionsclass a,
+.morefromyoutube a {
+  display: flex;
+  justify-content: left;
+  padding: 0.3rem;
+}
+
+.subscriptionsclass,
+.morefromyoutube {
+  border: 1px rgb(133, 137, 141) solid;
+  text-decoration: none;
+  height: auto;
+  list-style-type: none;
+
+  padding-right: 3rem;
 }
 
 /* Menu */
@@ -165,15 +183,7 @@ aside {
   display: flex;
   flex-direction: column;
 }
-.spread-menu,
-.subscriptionsclass,
-.morefromyoutube {
-  border: 1px rgb(133, 137, 141) solid;
-  text-decoration: none;
-  height: auto;
-  list-style-type: none;
-  padding-left: 5%;
-}
+
 .top-menu {
   display: flex;
   align-items: left;
