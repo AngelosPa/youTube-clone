@@ -14,7 +14,7 @@ p {
   color: rgb(190, 190, 190);
 }
 a:hover {
-  color: aliceblue !important;
+  color: rgb(255, 255, 255) !important;
   background-color: rgba(0, 0, 0, 0.034) !important;
   /*dont know why they dont work without imp[ortant */
 }
@@ -26,7 +26,21 @@ h1 {
 img {
   width: 10rem;
 }
-/* HERO SECTION WITH SEARCHBAR  */
+/* sorting out the SEARCHBAR  */
+.searchbarteam {
+  background-color: rgb(37, 37, 37);
+}
+.herosection input {
+  border: none;
+  width: 17rem;
+}
+
+input::placeholder {
+  color: rgb(190, 190, 190);
+  background-color: black;
+  height: 20rem;
+}
+/* sorting out the whole HERO SECTION WITH SEARCHBAR  */
 .herosection {
   display: flex;
   justify-content: space-between;
@@ -45,18 +59,19 @@ img {
 }
 .logo {
   display: flex;
+  align-items: left;
 }
 .logo-button-andstuff {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 2px rgb(85, 3, 3) dashed;
+
   width: 100vw;
 }
+
 /* Menu */
 .top-menu {
-  border: 2px red dashed;
   width: 100vw;
   height: 6vh;
   display: flex;
