@@ -4,6 +4,7 @@
   padding: 0;
   font-size: 16px;
 }
+/* basics  */
 body {
   background-color: rgb(59, 56, 56);
 }
@@ -25,6 +26,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: left;
+  border: 2px rgb(85, 3, 3) dashed;
 }
 .herosection img {
   width: 3rem;
@@ -35,7 +37,14 @@ img {
 .logo {
   display: flex;
 }
-
+.logo-button-andstuff {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px red dashed;
+  width: 100vw;
+}
 /* Menu */
 .top-menu {
   border: 2px red dashed;
@@ -44,6 +53,10 @@ img {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+  justify-content: left;
+}
+.top-menu a {
+  padding: 1rem;
 }
 .menu li {
   display: inline;
@@ -74,14 +87,11 @@ justify-content: start |  center | space-between | space-around | space-evenly  
 .main-container {
   display: flex;
   flex-direction: row;
-
-  border: 2px red dashed;
 }
 .main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 2px red dashed;
 }
 
 /*
@@ -95,18 +105,19 @@ justify-content: start |  center | space-between | space-around | space-evenly  
   flex-wrap: wrap;
 }
 */
+
+/* for the bigg banner and the small videos  */
 .bigimage {
   width: 50rem;
-  border: 2px rgb(85, 3, 3) dashed;
+  color: aliceblue;
 }
 .yliko {
-  margin-left: 5rem;
-  width: 80vh;
+  width: 100vw;
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .smallvideos {
   display: block;
