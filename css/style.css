@@ -13,6 +13,11 @@ i,
 p {
   color: rgb(190, 190, 190);
 }
+a:hover {
+  color: aliceblue !important;
+  background-color: rgba(0, 0, 0, 0.034) !important;
+  /*dont know why they dont work without imp[ortant */
+}
 h1 {
   color: aliceblue;
   font-size: 2rem;
@@ -24,9 +29,13 @@ img {
 /* HERO SECTION WITH SEARCHBAR  */
 .herosection {
   display: flex;
-  justify-content: space-evenly;
-  align-items: left;
-  border: 2px rgb(85, 3, 3) dashed;
+  justify-content: space-between;
+  align-items: center;
+}
+.herosection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .herosection img {
   width: 3rem;
@@ -42,7 +51,7 @@ img {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 2px red dashed;
+  border: 2px rgb(85, 3, 3) dashed;
   width: 100vw;
 }
 /* Menu */
@@ -62,7 +71,6 @@ img {
   display: inline;
 }
 .top-menu nav ul {
-  width: 40vw;
   display: flex;
   justify-content: space-evenly;
   /* flex-direction: row; */
@@ -110,6 +118,7 @@ justify-content: start |  center | space-between | space-around | space-evenly  
 .bigimage {
   width: 50rem;
   color: aliceblue;
+  margin-right: 30rem;
 }
 .yliko {
   width: 100vw;
