@@ -61,13 +61,7 @@ input::placeholder {
 .logo {
   display: flex;
 }
-.logo-button-andstuff {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100vw;
-}
+
 /* spread Menu */
 aside {
   display: flex;
@@ -165,6 +159,28 @@ justify-content: start |  center | space-between | space-around | space-evenly  
   color: aliceblue;
   margin-right: 30rem;
 }
+/* round logo-button-and title  */
+.logo-button-andstuff {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+}
+.herologo {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.herologo img {
+  width: 5rem;
+  border: 3px white solid;
+  border-radius: 50%;
+}
+
 .yliko {
   width: 100vw;
   height: 80vh;
@@ -187,16 +203,12 @@ justify-content: start |  center | space-between | space-around | space-evenly  
 .smallvideos p {
   color: rgb(255, 255, 255);
 }
-.herologo img {
-  width: 5rem;
-
-  border-radius: 50%;
-}
 
 .top-menu {
+  width: 50rem;
   display: flex;
   align-items: left;
   justify-content: center;
-
+  border: 2px red solid;
   background-color: rgb(37, 32, 32);
 }
