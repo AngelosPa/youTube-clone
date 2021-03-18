@@ -53,18 +53,44 @@ input::placeholder {
 }
 .herosection div:nth-child(1) {
   display: flex;
-  width: 2.5rem;
+  width: 3rem;
 }
 .herosection img {
   width: 3rem;
 }
-.herosection i {
-  color: aliceblue;
-  padding: 1rem;
+.x-menu {
+  background-color: rgba(255, 255, 255, 0);
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+}
+.first-l,
+.sec-l,
+.thr-l {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10%;
+}
+
+.x-menu:hover .first-l {
+  transform: rotate(0.15turn);
+  position: absolute;
+}
+.x-menu:hover .sec-l {
+  display: none;
+}
+.x-menu:hover .thr-l {
+  transform: rotate(-0.15turn);
+  background-color: rgb(0, 0, 0);
 }
 .herosection i:nth-child(2) {
   color: rgb(163, 173, 182);
-  border: 1px red dashed;
+
   background-color: rgb(77, 74, 70);
 }
 .logo {
@@ -178,7 +204,6 @@ a {
 }
 a:hover {
   background-color: lightgray;
-  transform: scale(2);
 }
 
 /*  Main   */
