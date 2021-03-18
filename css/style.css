@@ -27,11 +27,38 @@ h1 {
 img {
   width: 10rem;
 }
-/* sorting out the SEARCHBAR  */
+
+/*
+.container-ola {
+
+*/
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "aside herosection herosection"
+    "aside main main"
+    "aside main main";
+}
+
+/* sorting out the whole HERO SECTION WITH SEARCHBAR  */
 .herosection {
   grid-area: herosection;
-  border: 1px rgb(94, 255, 0) dashed;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
 }
+
+.herosection div:nth-child(1) {
+  display: flex;
+  width: 3rem;
+}
+.herosection img {
+  width: 3rem;
+}
+/* sorting out the SEARCHBAR  */
+
 .searchbarteam {
   background-color: rgb(59, 56, 56);
 }
@@ -45,23 +72,36 @@ input::placeholder {
   background-color: black;
   border: none;
 }
-/* sorting out the whole HERO SECTION WITH SEARCHBAR  */
-.herosection {
+
+.herosection i:nth-child(2) {
+  color: rgb(163, 173, 182);
+
+  background-color: rgb(77, 74, 70);
+}
+.logo {
+  width: 2.5rem;
+  height: 1rem;
+
+  display: flex;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 92rem;
-}
-.herosection {
-  display: flex;
 }
 
-.herosection div:nth-child(1) {
-  display: flex;
-  width: 3rem;
+/* spread Menu */
+.spread-menu,
+aside {
+  grid-area: aside;
+  width: 9rem;
 }
-.herosection img {
-  width: 3rem;
+.youti {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 6rem;
 }
 .x-menu {
   background-color: rgba(255, 255, 255, 0);
@@ -93,32 +133,8 @@ input::placeholder {
   transform: rotate(-0.15turn);
   background-color: rgb(0, 0, 0);
 }
-.herosection i:nth-child(2) {
-  color: rgb(163, 173, 182);
-
-  background-color: rgb(77, 74, 70);
-}
-.logo {
-  width: 2.5rem;
-  height: 1rem;
-
-  display: flex;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
-}
 .logo img {
   width: 2.5rem;
-}
-/* spread Menu */
-aside {
-  grid-area: aside;
-  display: flex;
-  flex-direction: column;
-  border: 1px red dashed;
-  justify-content: left;
 }
 
 .spread-menu a,
@@ -127,7 +143,7 @@ aside {
   display: flex;
   padding: 0.3rem;
 }
-.gms1 {
+.subbar {
   margin: 1rem 0 1rem 0;
   border-bottom: 2px rgb(133, 137, 141) solid;
 }
@@ -138,9 +154,19 @@ aside {
   text-decoration: none;
   height: auto;
   list-style-type: none;
-  width: 12rem;
+  width: 6rem;
   padding-right: 3rem;
 }
+
+/*  Main   */
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(37, 32, 32);
+}
+
 /* for the bigg banner and the small videos  */
 .bigimage {
   width: auto;
@@ -217,30 +243,6 @@ a {
 a:hover {
   background-color: lightgray;
 }
-
-/*  Main   */
-
-.main-container {
-  display: grid;
-  grid-template-areas:
-    "aside herosection herosection"
-    "aside main main"
-    "aside main main";
-  border: 1px red dashed;
-}
-.main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: rgb(37, 32, 32);
-  border: 1px rgb(17, 0, 255) dashed;
-}
-
-/*
-.container-ola {
-
-*/
 
 /* for the buttons, upload sort by etc */
 .vidoptions {
