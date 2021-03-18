@@ -28,6 +28,10 @@ img {
   width: 10rem;
 }
 /* sorting out the SEARCHBAR  */
+.herosection {
+  grid-area: herosection;
+  border: 1px rgb(94, 255, 0) dashed;
+}
 .searchbarteam {
   background-color: rgb(59, 56, 56);
 }
@@ -51,6 +55,7 @@ input::placeholder {
 .herosection {
   display: flex;
 }
+
 .herosection div:nth-child(1) {
   display: flex;
   width: 3rem;
@@ -94,6 +99,9 @@ input::placeholder {
   background-color: rgb(77, 74, 70);
 }
 .logo {
+  width: 2.5rem;
+  height: 1rem;
+
   display: flex;
   display: flex;
   align-items: center;
@@ -101,14 +109,18 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
 }
-
+.logo img {
+  width: 2.5rem;
+}
 /* spread Menu */
 aside {
+  grid-area: aside;
   display: flex;
   flex-direction: column;
-
+  border: 1px red dashed;
   justify-content: left;
 }
+
 .spread-menu a,
 .subscriptionsclass a,
 .morefromyoutube a {
@@ -209,14 +221,20 @@ a:hover {
 /*  Main   */
 
 .main-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-areas:
+    "aside herosection herosection"
+    "aside main main"
+    "aside main main";
+  border: 1px red dashed;
 }
 .main {
+  grid-area: main;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: rgb(37, 32, 32);
+  border: 1px rgb(17, 0, 255) dashed;
 }
 
 /*
