@@ -13,7 +13,16 @@
     
     <section class="main-container">
       <section class="herosection">
-      
+        <div class="youti">
+          <div class="x-menu">
+            <div class="first-l"></div>
+            <div class="sec-l"></div>
+            <div class="thr-l"></div>
+          </div>
+        <div class="logo">
+        <img src="./img/icon.png" alt="youtubelogo" /><h1>Youtube</h1>
+        </div>
+      </div>
         <div class="searchbarteam">
           <input type="text" placeholder="Search.." />
           <i class="fas fa-search"></i> <i class="fas fa-microphone"></i>
@@ -27,22 +36,9 @@
       </section>
       <aside>
 
-
-
-
-
         <div class="spread-menu">
 
-          <div class="youti">
-            <div class="x-menu">
-              <div class="first-l"></div>
-              <div class="sec-l"></div>
-              <div class="thr-l"></div>
-            </div>
-          <div class="logo">
-          <img src="./img/icon.png" alt="youtubelogo" /><h1>Youtube</h1>
-          </div>
-        </div>
+
       <ul>
       <li>
       <a href="#" class="subbar"> <i class="fab fa-youtube-square"></i> &nbsp&nbsp&nbsp&nbspSubscriptions</a>
@@ -213,5 +209,24 @@
           </div></div>
      
     </section>
+
+
+    <script>
+            let clicked = false;
+      document.querySelector('.x-menu').addEventListener("click",()=>{
+      clicked= !clicked;
+          console.log(clicked);
+          if(clicked){
+              document.querySelector('aside').style.cssText = "display: none;"
+            
+            
+              
+          } else{
+              document.querySelector('aside').style.cssText = "display: inline;"
+             
+           
+          }
+      })
+    </script>
   </body>
 </html>

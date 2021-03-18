@@ -35,7 +35,7 @@ img {
 .main-container {
   display: grid;
   grid-template-areas:
-    "aside herosection herosection"
+    "herosection herosection herosection"
     "aside main main"
     "aside main main";
 }
@@ -43,9 +43,9 @@ img {
 /* sorting out the whole HERO SECTION WITH SEARCHBAR  */
 .herosection {
   grid-area: herosection;
-
+  margin: 0 0.8rem 0 0.8rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 3rem;
 }
