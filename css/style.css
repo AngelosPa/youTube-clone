@@ -94,7 +94,7 @@ input::placeholder {
 .spread-menu,
 aside {
   grid-area: aside;
-  width: 4rem;
+  width: 20vw;
   display: inline;
 }
 .youti {
@@ -301,8 +301,9 @@ a:hover {
     width: 90vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
     height: auto;
   }
 
@@ -342,9 +343,11 @@ a:hover {
     align-items: center;
     flex-direction: column;
     display: flex;
-    justify-content: space-between;
 
-    width: 70vw;
+    width: 90vw;
+  }
+  .logo-button-andstuff div:nth-child(n) {
+    margin: 10px;
   }
   .yliko {
     width: 90vw;
@@ -358,7 +361,7 @@ a:hover {
     background-color: rgba(3, 3, 3, 0.733);
   }
   .top-menu {
-    width: 80vw;
+    width: 90vw;
     height: auto;
     display: flex;
     align-items: center;
