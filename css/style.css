@@ -47,6 +47,7 @@ ul {
   grid-area: herosection;
   margin: 0 0.8rem 0 0.8rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 3rem;
@@ -96,7 +97,7 @@ input::placeholder {
 .spread-menu,
 aside {
   grid-area: aside;
-  width: 20vw;
+  width: 5rem;
   display: inline;
 }
 .youti {
@@ -294,6 +295,25 @@ a:hover {
 
 .smallvideos p {
   color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1529px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .spread-menu,
+  aside {
+    width: auto;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30vw;
+    height: auto;
+    margin: 1rem 0rem 1rem 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
