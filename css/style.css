@@ -95,6 +95,7 @@ input::placeholder {
 aside {
   grid-area: aside;
   width: 9rem;
+  display: inline;
 }
 .youti {
   display: flex;
@@ -288,4 +289,76 @@ a:hover {
 
 .smallvideos p {
   color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+  .herosection {
+    grid-area: herosection;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .spread-menu,
+  aside {
+    grid-area: aside;
+    width: auto;
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+  }
+  .main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgb(37, 32, 32);
+    width: 100vw;
+    height: auto;
+  }
+  .bigimage img {
+    width: 100vw;
+  }
+  .vidoptions {
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3.3rem;
+    width: 100vw;
+
+    background-color: black;
+  }
+  .yliko {
+    width: 100vh;
+    height: 300vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: flex-start;
+    background-color: rgba(3, 3, 3, 0.733);
+  }
+  .top-menu {
+    padding-left: 3rem;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(37, 32, 32);
+  }
+  .smallvideos {
+    display: block;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border: 2px red solid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+  }
 }
