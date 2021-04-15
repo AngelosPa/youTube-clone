@@ -25,3 +25,10 @@ $ab-black: black;
 $backround-col: rgb(37, 32, 32);
 //ideal for .main
 $button-col: rgb(82, 72, 72);
+@mixin flexSetup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
