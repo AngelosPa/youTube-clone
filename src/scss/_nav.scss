@@ -1,7 +1,7 @@
 /* sorting out the SEARCHBAR  */
 
 .searchbarteam {
-  background-color: rgb(59, 56, 56);
+  background-color: $dark-backround;
 }
 .herosection input {
   border: none;
@@ -9,15 +9,15 @@
 }
 
 input::placeholder {
-  color: rgb(190, 190, 190);
-  background-color: black;
+  color: $darkwhite-fortext;
+  background-color: $ab-black;
   border: none;
 }
 
 .herosection i:nth-child(2) {
-  color: rgb(163, 173, 182);
+  color: $darkwhite-fortext;
 
-  background-color: rgb(77, 74, 70);
+  background-color: $button-col;
 }
 .logo {
   width: 2.5rem;

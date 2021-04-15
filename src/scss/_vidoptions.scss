@@ -8,7 +8,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgb(37, 32, 32);
+  background-color: $backround-col;
 }
 .top-menu a {
   padding: 1.5rem;
@@ -28,7 +28,7 @@ a {
   width: 40vw;
 }
 a:hover {
-  background-color: lightgray;
+  background-color: $darkwhite-fortext;
 }
 
 /* for the buttons, upload sort by etc */
@@ -41,7 +41,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 
-  background-color: black;
+  background-color: $ab-black;
 }
 
 .vidoptions div {
@@ -61,7 +61,7 @@ a:hover {
   flex-wrap: wrap;
   align-items: top;
   justify-content: flex-start;
-  background-color: rgba(3, 3, 3, 0.733);
+  background-color: $ab-black;
 }
 .smallvideos {
   display: block;
@@ -70,11 +70,11 @@ a:hover {
   padding: 0.4rem;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgb(0, 0, 0);
+  background-color: $ab-black;
 }
 
 .smallvideos p {
-  color: rgb(255, 255, 255);
+  color: $abs-white;
 }
 
 @media only screen and (max-width: 1429px) {

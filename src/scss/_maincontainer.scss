@@ -4,25 +4,25 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: rgb(37, 32, 32);
+  background-color: $backround-col;
 }
 /* basics  */
 
 body {
-  background-color: rgb(59, 56, 56);
+  background-color: $backround-col;
 }
 a,
 i,
 p {
-  color: rgb(190, 190, 190);
+  color: $darkwhite-fortext;
 }
 a:hover {
-  color: rgb(255, 255, 255) !important;
+  color: $abs-white !important;
   background-color: rgba(0, 0, 0, 0.034) !important;
   /*dont know why they dont work without imp[ortant */
 }
 h1 {
-  color: aliceblue;
+  color: $abs-white;
   font-size: 2rem;
   letter-spacing: -0.2rem;
 }
@@ -33,9 +33,9 @@ ul {
   list-style-type: none;
 }
 /*
-  .container-ola {
-  
-  */
+    .container-ola {
+    
+    */
 .main-container {
   display: grid;
   grid-template-areas:
