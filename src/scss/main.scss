@@ -1,8 +1,15 @@
+@import "./esset";
 @import "./var/variables.scss";
-
-@import "./mob-style";
 @import "./nav";
 @import "./vidoptions";
 @import "./normalize";
 @import "./smallcontainers";
 @import "./maincontainer";
+
+@import "./mob-style";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}

@@ -1,30 +1,29 @@
 /* sorting out the SEARCHBAR  */
-
 .searchbarteam {
   background-color: $dark-backround;
 }
-.herosection input {
-  border: none;
-  width: 17rem;
+.herosection {
+  input {
+    border: none;
+    width: 17rem;
+  }
+  i {
+    &:nth-child(2) {
+      color: $darkwhite-fortext;
+      background-color: $button-col;
+    }
+  }
 }
-
-input::placeholder {
-  color: $darkwhite-fortext;
-  background-color: $ab-black;
-  border: none;
-}
-
-.herosection i:nth-child(2) {
-  color: $darkwhite-fortext;
-
-  background-color: $button-col;
+input {
+  &::placeholder {
+    color: $darkwhite-fortext;
+    background-color: $ab-black;
+    border: none;
+  }
 }
 .logo {
   width: 2.5rem;
   height: 1rem;
-
-  display: flex;
-  display: flex;
   align-items: center;
   flex-direction: row;
   display: flex;

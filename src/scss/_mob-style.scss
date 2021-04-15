@@ -4,36 +4,41 @@
   padding: 0;
   font-size: 16px;
 }
-/* basics  */
-
+@mixin flexSetup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
 @media only screen and (max-width: 600px) {
   .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flexSetup();
     height: auto;
   }
   .herosection {
     width: 90vw;
-    display: flex;
+    @include flexSetup();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
     height: auto;
+    &:nth-child(1) {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      flex-wrap: wrap;
+      margin: 1rem 0rem 0rem 0;
+    }
   }
-
-  .herosection:nth-child(1) {
-    display: flex;
+  .spread-menu {
+    width: auto;
+    display: none;
     flex-direction: row;
-    justify-content: left;
     flex-wrap: wrap;
-    margin: 1rem 0rem 0rem 0;
+    width: 40vw;
+    height: auto;
+    margin: 1rem 0rem 1rem 0;
   }
-
-  .spread-menu,
   aside {
     width: auto;
     display: none;
@@ -51,68 +56,58 @@
     width: 90vw;
     height: auto;
   }
-  .bigimage img {
-    width: 90vw;
+  .bigimage {
+    img {
+      width: 90vw;
+    }
   }
   .vidoptions {
     width: 90vw;
     align-items: center;
     justify-content: center;
     display: flex;
-
     background-color: $ab-black;
   }
   .logo-button-andstuff {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-
+    @include flexSetup();
     width: 90vw;
-  }
-  .logo-button-andstuff div:nth-child(n) {
-    margin: 10px;
+    div {
+      &:nth-child(n) {
+        margin: 10px;
+      }
+    }
   }
   .yliko {
     width: 90vw;
-    height: auto;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
-    justify-content: center;
+    @include flexSetup();
     background-color: rgba(3, 3, 3, 0.733);
   }
   .top-menu {
     width: 90vw;
-    height: auto;
-    display: flex;
-    align-items: center;
-
-    justify-content: center;
+    @include flexSetup();
     background-color: $backround-col;
+    nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
   }
-
-  .menu li {
-    display: block;
-    padding: 0.3rem;
-    justify-content: center;
-    text-align: center;
+  .menu {
+    li {
+      display: block;
+      padding: 0.3rem;
+      justify-content: center;
+      text-align: center;
+    }
   }
-  .top-menu nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .smallvideos {
     display: block;
     width: auto;
     height: auto;
     align-items: center;
     justify-content: center;
-
     flex-direction: row;
     flex-wrap: wrap;
     background-color: $ab-black;
