@@ -1,0 +1,115 @@
+/* spread Menu */
+.spread-menu,
+aside {
+  grid-area: aside;
+  width: 5rem;
+  display: inline;
+}
+.youti {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 6rem;
+}
+.x-menu {
+  background-color: rgba(255, 255, 255, 0);
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+}
+.first-l,
+.sec-l,
+.thr-l {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10%;
+}
+
+.x-menu:hover .first-l {
+  transform: rotate(0.15turn);
+  position: absolute;
+}
+.x-menu:hover .sec-l {
+  display: none;
+}
+.x-menu:hover .thr-l {
+  transform: rotate(-0.15turn);
+  background-color: rgb(0, 0, 0);
+}
+.logo img {
+  width: 2.5rem;
+}
+
+.spread-menu a,
+.subscriptionsclass a,
+.morefromyoutube a {
+  display: flex;
+  padding: 0.3rem;
+}
+.subbar {
+  margin: 1rem 0 1rem 0;
+  border-bottom: 2px rgb(133, 137, 141) solid;
+}
+.spread-menu,
+.subscriptionsclass,
+.morefromyoutube {
+  border-bottom: 2px rgb(133, 137, 141) solid;
+  text-decoration: none;
+  height: auto;
+  list-style-type: none;
+  width: 6rem;
+  padding-right: 3rem;
+}
+
+/* round logo-button-and title subscribed button */
+.logo-button-andstuff {
+  padding-top: 1rem;
+  padding-left: 3rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+
+  width: 80rem;
+}
+.logo-button-andstuff input {
+  border: 0.5rem rgb(82, 72, 72) solid;
+  color: rgb(190, 190, 190);
+  background-color: rgb(82, 72, 72);
+}
+.logo-button-andstuff i {
+  padding: 1rem;
+}
+
+/* for the bigg banner and the small videos  */
+.bigimage {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.bigimage img {
+  width: 40rem;
+}
+
+.herologo {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.herologo img {
+  width: 5rem;
+  border: 3px white solid;
+  border-radius: 50%;
+}

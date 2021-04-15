@@ -1,0 +1,64 @@
+/*  Main   */
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(37, 32, 32);
+}
+/* basics  */
+
+body {
+  background-color: rgb(59, 56, 56);
+}
+a,
+i,
+p {
+  color: rgb(190, 190, 190);
+}
+a:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(0, 0, 0, 0.034) !important;
+  /*dont know why they dont work without imp[ortant */
+}
+h1 {
+  color: aliceblue;
+  font-size: 2rem;
+  letter-spacing: -0.2rem;
+}
+img {
+  width: 10rem;
+}
+ul {
+  list-style-type: none;
+}
+/*
+  .container-ola {
+  
+  */
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "herosection herosection herosection"
+    "aside main main"
+    "aside main main";
+}
+
+/* sorting out the whole HERO SECTION WITH SEARCHBAR  */
+.herosection {
+  grid-area: herosection;
+  margin: 0 0.8rem 0 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+
+.herosection div:nth-child(1) {
+  display: flex;
+  width: 3rem;
+}
+.herosection img {
+  width: 3rem;
+}
