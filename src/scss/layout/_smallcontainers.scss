@@ -1,8 +1,12 @@
 /* night mode Menu */
 .nightmenuoption {
-  width: 5rem;
-  height: 40rem;
-
+  width: 14rem;
+  height: 7rem;
+  display: visible;
+  position: absolute;
+  right: 6rem;
+  top: 3rem;
+  background-color: $dark-backround;
   /* fancy checkbox */
   .toggle {
     display: flex;
