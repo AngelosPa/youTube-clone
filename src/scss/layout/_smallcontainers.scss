@@ -2,11 +2,12 @@
 .nightmenuoption {
   width: 14rem;
   height: 7rem;
-  display: visible;
+  display: none;
   position: absolute;
   right: 6rem;
   top: 3rem;
   background-color: $dark-backround;
+  color: #ccc;
   /* fancy checkbox */
   .toggle {
     display: flex;
@@ -174,4 +175,7 @@ aside {
   width: 5rem;
   border: 3px $abs-white;
   border-radius: 50%;
+}
+.nightmenuoptionactive {
+  display: block !important;
 }

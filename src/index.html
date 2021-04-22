@@ -12,7 +12,7 @@
       
     <link rel="stylesheet" href="./css/laptop-style.css" media="(max-width:1000px)" />  -->
   </head>
-  <body>
+  <body class="">
 
     
     <section class="main-container">
@@ -35,7 +35,7 @@
           <a href="#"><i class="fas fa-video"></i></a>
           <a href="#"><i class="fas fa-boxes"></i></a>
           <a href="#"><i class="fas fa-bell"></i></a>
-          <a class ="meni" href="#"><i class="fab fa-autoprefixer"></i></a>
+          <a class ="meni" href="#"><i class="fab fa-autoprefixer meni2"></i></a>
         </div>
         <div class="nightmenuoption">
           <section class="toggle">
@@ -225,7 +225,7 @@
 
 
     <script>
-            let clicked = false;
+            let clicked = true;
       document.querySelector('.x-menu').addEventListener("click",()=>{
       clicked= !clicked;
           console.log(clicked);
@@ -240,15 +240,60 @@
            
           }
       })
+       clicked = true;
+
+
+      console.log(document.querySelector('.meni'));
+
+
+      document.querySelector('.meni').addEventListener("click",()=>{
+      clicked= !clicked;
+          console.log(clicked);
+          if(clicked){
+              document.querySelector('.nightmenuoption').classList.add('nightmenuoptionactive')
+              //in toggle we dont need a .
+            
+            
+              
+          } else{
+            document.querySelector('.nightmenuoption').classList.remove('nightmenuoptionactive')
+             
+           
+          }
+      })
     </script>
       <script>
+    const toggleall =()=> {
+      document.querySelector("body").classList.toggle('helpmeeeee');
+      //toggle delete a class if she exists and adds to list if she doesnt exist..turn on ->add classes turn off ->remove class
+    document.querySelector(".main-container").classList.toggle('helpmeeeee');
+    document.querySelector("aside").classList.toggle('helpmeeeee');
+    document.querySelector(".nightmenuoption").classList.toggle('helpmeeeee');
+    document.querySelector(".subbar").classList.toggle('helpmeeeee');
+    document.querySelector("p").classList.toggle('helpmeeeee');
+    document.querySelector("a").classList.toggle('helpmeeeee'); //it takes only the first 
+    document.querySelector("h1").classList.toggle('helpmeeeee');
+    document.querySelector("i").classList.toggle('helpmeeeee');
+    document.querySelector("li").classList.toggle('helpmeeeee');
+    document.querySelector(".main").classList.toggle('helpmeeeee');
+    document.querySelector(".logo-button-andstuff").classList.toggle('helpmeeeee');
+    document.querySelector(".smallvideos").classList.toggle('helpmeeeee');
+   
+    }
+
     const kolofws = ()=> {   const gamwmenu=document.querySelector('#light-dark-switch').checked;
         body = document.querySelector("body").style;
         console.log(gamwmenu)
         if (gamwmenu) {
-    body.backgroundColor = "black";
+    body.backgroundColor = "#3b3838";
+    toggleall()
+   
   } else {
-    body.backgroundColor = "white";
+   
+   
+    toggleall()
+   
+   
   }
      }
     </script>
