@@ -1,9 +1,9 @@
-@import "./esset";
+@import "./vendor/esset";
 @import "./var/variables.scss";
-@import "./nav";
-@import "./vidoptions";
-@import "./normalize";
-@import "./smallcontainers";
-@import "./maincontainer";
+@import "./layout/nav";
+@import "./layout/vidoptions";
+@import "./vendor/normalize";
+@import "./layout/smallcontainers";
+@import "./layout/maincontainer";
 
 @import "./mob-style";

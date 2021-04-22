@@ -35,7 +35,16 @@
           <a href="#"><i class="fas fa-video"></i></a>
           <a href="#"><i class="fas fa-boxes"></i></a>
           <a href="#"><i class="fas fa-bell"></i></a>
-          <a href="#"><i class="fab fa-autoprefixer"></i></a>
+          <a class ="opensthemagic" href="#"><i class="fab fa-autoprefixer"></i></a>
+        </div>
+        <div class="nightmenuoption">
+          <section class="toggle">
+            <label class="toggle-lable">Night/Day Mode</label>
+            <label class="switch">
+              <input type="checkbox" name="moreInfo" />
+              <span class="slider"></span>
+            </label>
+          </section>
         </div>
       </section>
       <aside>
@@ -232,5 +241,22 @@
           }
       })
     </script>
+      <!-- <script>
+            let clicked = false;
+      document.querySelector('.opensthemagic').addEventListener("click",()=>{
+      clicked= !clicked;
+          console.log(clicked);
+          if(clicked){
+              document.querySelector('.nightmenuoption').style.cssText = "display: inline;"
+            
+            
+              
+          } else{
+              document.querySelector('.nightmenuoption').style.cssText = "display: none;"
+             
+           
+          }
+      })
+    </script> -->
   </body>
 </html>
