@@ -64,6 +64,11 @@ ul {
 }
 
 .helpmeeeee {
-  color: black !important;
-  background-color: white !important;
+  * {
+    color: black;
+    background-color: white;
+    p {
+      color: black !important;
+    }
+  }
 }

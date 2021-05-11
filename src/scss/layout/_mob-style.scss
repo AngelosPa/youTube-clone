@@ -82,9 +82,7 @@
     background-color: $backround-col;
     nav {
       ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: block;
       }
     }
   }
