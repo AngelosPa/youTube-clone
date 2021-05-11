@@ -12,7 +12,7 @@
       
     <link rel="stylesheet" href="./css/laptop-style.css" media="(max-width:1000px)" />  -->
   </head>
-  <body>
+  <body class="">
 
     
     <section class="main-container">
@@ -31,12 +31,14 @@
           <input type="text" placeholder="Search.." />
           <i class="fas fa-search"></i> <i class="fas fa-microphone"></i>
         </div>
+        
         <div class="iconstopleft">
           <a href="#"><i class="fas fa-video"></i></a>
           <a href="#"><i class="fas fa-boxes"></i></a>
           <a href="#"><i class="fas fa-bell"></i></a>
-          <a href="#"><i class="fab fa-autoprefixer"></i></a>
+          <a class ="meni" href="#"><i class="fab fa-autoprefixer meni2"></i></a>
         </div>
+   
       </section>
       <aside>
 
@@ -131,6 +133,15 @@
       <a href="#"><i class="fas fa-headset"></i></i>&nbsp&nbsp&nbsp&nbspLive</a>
       </li>
       </ul>
+      <div class="nightmenuoption">
+        <section class="toggle">
+          <label class="toggle-lable">Night/Day Mode</label>
+          <label class="switch">
+            <input   type="checkbox" onchange="kolofws()" name="moreInfo" id="light-dark-switch" />
+            <span class="slider"></span>
+          </label>
+        </section>
+      </div>
       </div></aside>
     
       <div class="main">
@@ -165,8 +176,11 @@
           </li>
           </ul>
           </nav>
+          
           </div>
+          
           </section>
+          
           <div class="vidoptions">
           <div><a href="#"><p>Uploads<i class="fas fa-caret-down"></i></p>
           </a>   <a href="#">PLAY ALL</a></div >
@@ -211,12 +225,13 @@
           <a href="#"><img src="./img/videxample.jpg" alt="video"></a><p>Huawei p40mat</p> <a href="#">views</a> <a href="#">days ago</a>
           </div>
           </div></div>
+
      
     </section>
 
 
     <script>
-            let clicked = false;
+            let clicked = true;
       document.querySelector('.x-menu').addEventListener("click",()=>{
       clicked= !clicked;
           console.log(clicked);
@@ -231,6 +246,33 @@
            
           }
       })
+       clicked = true;
+ </script>
+
+      <script>
+    const toggleall =()=> {
+      let gms;
+     
+      //toggle delete a class if she exists and adds to list if she doesnt exist..turn on ->add classes turn off ->remove class
+      document.querySelector("body").classList.toggle('helpmeeeee');
+    gms = document.body.getElementsByTagName(`*`);
+    gms.classList.toggle('helpmeeeee');
+    }
+
+    const kolofws = ()=> {   const gamwmenu=document.querySelector('#light-dark-switch').checked;
+        body = document.querySelector("body").style;
+        console.log(gamwmenu)
+        if (gamwmenu) {
+    body.backgroundColor = "#3b3838";
+    toggleall()
+   
+  } else {
+   
+    toggleall()
+   
+   
+  }
+     }
     </script>
   </body>
 </html>
